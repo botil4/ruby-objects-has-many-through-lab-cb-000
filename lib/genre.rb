@@ -13,8 +13,8 @@ class Genre
     @songs << song
   end
 
-  def add_artist(artist)
-    @artists << song.artist
+  def artists
+    @songs.collect {|song| song.artist}
   end
 
 end
